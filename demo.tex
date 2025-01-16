@@ -4,7 +4,7 @@
 
 \usepackage{amsmath} % \usepackage is a command that allows you to add functionality to your LaTeX code
 
-\title{Simple Sample} % Sets article title
+\title{My Model Document} % Sets article title
 \author{My Name} % Sets authors name
 \date{\today} % Sets date for date compiled
 
@@ -12,7 +12,13 @@
 \begin{document} % All begin commands must be paired with an end command somewhere
 \maketitle % creates title using information in preamble (title, author, date)
 
-\section{Hello World!} % creates a section
+\section{Introduction} % creates a section
+
+\input{chapters/section1.tex}
+
+\section{Black Scholes Model Summary} % creates a section
+
+\input{chapters/blackscholes.tex}
 
 \textbf{Hello World!} Today I am learning \LaTeX. %notice how the command will end at the first non-alphabet charecter such as the . after \LaTeX
 \LaTeX{} is a great program for writing math. I can write in line math such as $a^2+b^2=c^2$ %$ tells LaTexX to compile as math
@@ -25,5 +31,27 @@ Also notice how even though I hit enter after that sentence and here $\downarrow
 \LaTeX{} formats the sentence without any break.  Also   look  how      it   doesn't     matter          how    many  spaces     I put     between       my    words.
 
 For a new essay I can leave a blank space in my code.
+
+\subsection{Quadratic Equations}
+
+The general form of a quadratic equation is:
+\begin{equation}
+ax^2 + bx + c = 0
+\end{equation}
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{ColumnA} & \textbf{ColumnB} & \textbf{ColumnC} \\
+\hline
+1 & 2 & 3 \\
+\hline
+4 & 5 & 6 \\
+\hline
+\end{tabular}
+\caption{Sample Table}
+\label{table:1}
+\end{table}
+
 
 \end{document} % This is the end of the document
