@@ -34,6 +34,8 @@
 	"latex-workshop.latex.build.forceRecipeUsage": false,
 	"latex-workshop.synctex.afterBuild.enabled": true,
 	"latex-workshop.view.pdf.viewer": "tab",
+	"latex-workshop.formatting.latex": "latexindent",
+	"latex-workshop.latex.autoBuild.run": "onFileChange",
 	"latex-workshop.latex.clean.subfolder.enabled": true,
 	"latex-workshop.latex.magic.args": [
 		"-output-directory=PDF", // to change the output directory
