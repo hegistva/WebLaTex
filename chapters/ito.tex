@@ -1,0 +1,14 @@
+\section{Itô's Lemma}
+
+Itô's Lemma is a fundamental result in stochastic calculus, widely used in financial mathematics and other fields involving stochastic processes. It provides a way to compute the differential of a function of a stochastic process, particularly when the process follows an Itô drift-diffusion model.
+
+For a function \( f(t, X_t) \), where \( X_t \) is a stochastic process satisfying the stochastic differential equation:
+\[
+    dX_t = \mu(t, X_t) \, dt + \sigma(t, X_t) \, dW_t,
+\]
+Itô's Lemma states that:
+\[
+    df(t, X_t) = \frac{\partial f}{\partial t} \, dt + \frac{\partial f}{\partial x} \, dX_t + \frac{1}{2} \frac{\partial^2 f}{\partial x^2} \sigma^2(t, X_t) \, dt.
+\]
+
+This result is crucial for modeling and analyzing systems influenced by randomness, such as option pricing in financial markets.
